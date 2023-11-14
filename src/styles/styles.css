@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    flex: 1;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.text-margin{
+    margin-bottom: 4%;
+}
+.text-line-height{
+    line-height: 1.5em;
+}
+.logo {
+    position: absolute;
+    left: 1vh;
+    top: 2vh;
+}
+.content-section {
+    margin: 1em;
+}
+.section-skills{
+    min-width: 500px;
+    background-color: rgba(222, 184, 135, 0.6);
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 10% 0%;
+}
+.section-project{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-bottom: 25%;
+    padding: 4%;
+    padding-right: 4%;
+}

@@ -1,0 +1,61 @@
+.main-header {
+    min-width: 500px;
+    background: linear-gradient(to right, #D4BFA3, #D6CBBD);
+    background-blend-mode: multiply;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    transition: top 0.7s ease-in-out;
+    border-radius: 0 0 15px 15px;
+    
+}
+
+.main-header-hidden {
+    top: -530px; 
+}
+.footer-line{
+    min-width: 500px;
+    width: 100%;
+    height: 10px;
+    background-color: #D2B48C;
+    margin-top: 30%;
+}
+.section-header {
+    font-family: "Open Sans";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 1.7vh;
+    margin-top: 30vh;
+    padding-bottom: 30vh;
+}
+.tool_container{
+    border: 2px solid #A0522D; 
+    border-radius: 10px;
+    color:#A0522D;
+    text-align: center; 
+    padding:6px 10px;
+    margin-right: 10px;
+
+}
+.text-inside-background-1{
+    justify-self: flex-start;
+    width: 100%;
+    margin-right: 4%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    line-height: 1.5em;
+}
+.text-inside-background-2{
+    justify-self: flex-start;
+    width: 100%;
+    margin-right: 4%;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    line-height: 1.5em;
+}
+
+.tech-stack{
+    justify-self: flex-end;
+}
