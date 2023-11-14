@@ -1,0 +1,136 @@
+.ant{
+    position: fixed;
+    right: 5vh;
+    bottom: 5vh;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+.ant:hover{
+    scale: 150%;
+    transition: all 0.3s none;
+}
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 25vw;
+    top: 9vh;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: .5rem;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 2.5vh 5vw;
+    width: 80%;
+    max-width: 50vw;
+    border-radius: 15px;
+}
+
+.report-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   
+}
+.report-content h2{
+    font-size: 24px;
+}
+.report-content p{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 45%;
+    padding-top: 4%;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.report-content p1{
+    text-align: left;
+    margin: 0;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: auto;
+    display: flex; 
+    align-items: center;
+}   
+.report-purpose{
+    margin: 5px 0; 
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-left: 10px;
+
+}
+
+.input{
+    border-radius: 10px;
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: start;
+    padding: 10px 10px; 
+    text-align: start;
+    resize: unset;
+}
+.input-title{
+
+    height: 7vh;
+    min-height: 81px;
+    border-radius: 10px;
+    width: 100%;
+}
+.modal-success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.input-description{
+    height: 15vh;
+    min-height: 162px;
+    width: 100%;
+}
+.btn-modal{
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #D2B48C;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    white-space: nowrap;
+    padding: 10px 40px;
+    min-width: 130px;
+    margin: 0 auto;
+    margin-top: 10px;
+}

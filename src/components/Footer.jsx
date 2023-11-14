@@ -11,8 +11,6 @@ export const Footer = () => {
 
                 <div className="footer-name">Zakkur29</div>
                 <div className="container main-footer-container">
-
-                    <h></h>
                     <ul className="footer-nav">
                         <li>
                             <a href="https://github.com/JadePaver"><img className="footer-logo" src={github} alt="f-git" width="40" height="40" /></a>

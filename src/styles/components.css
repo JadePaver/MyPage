@@ -3,6 +3,7 @@
     background-color: #D2B48C;
     top: 0;
     transition: all .4s ease-in-out;
+    border-radius: 0 0 0.5rem 0.5rem;
 }
 .nav-hidden {
     transform: translateY(-100%);
@@ -176,9 +177,9 @@
 
 
 .footer-logo:hover{
-    scale: 120%;
-    border: #333 1px solid;
-    border-radius: 100px;
+    
+    border: #ffffff 1px solid;
+    border-radius: 1px;
 }
 .nav li {
     display: inline;
@@ -224,8 +225,10 @@
 
 .footer-nav{
     display: flex;
+    list-style: none;
 }
 .footer-nav img {
+    margin: .3rem;
     width: 30px;
     height: 30px;
 }

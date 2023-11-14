@@ -2,8 +2,25 @@
 import pasabay from '../assets/Pasabay/pasabay.svg'
 import persona from '../assets/Persona/persona.svg'
 import me from '../assets/Profile-Jade.jpg'
+import {AntModal} from '../components/Ant'
+
+const PDF_FILE_URL = 'http://localhost:5173/myPage/Paver-resume.pdf'
+
+
 export function Home () {
-    const aboutMe=`As a junior web developer, I've amassed over two years of internship experience with diverse companies, where I honed my skills in web development. Now, I'm actively seeking an opportunity to transition into the corporate world, where I can continue to nurture and advance my expertise.`
+    const aboutMe=`As a junior web developer, I've amassed over two years of internship experience with diverse companies, where I honed my skills in web development. Now, I'm actively seeking an opportunity to transition into the corporate world, where I can continue to nurture and advance my expertise.`;
+
+    const downLoadResume =(url)=>{
+      const fileName = url.split('/').pop();
+      const aTag = document.createElement('a');
+      aTag.href=url
+      aTag.setAttribute('download',fileName)
+      document.body.appendChild(aTag)
+      aTag.click();
+      aTag.remove();
+
+    }
+
   return (
     <>
       <div className="profile">
@@ -16,7 +33,7 @@ export function Home () {
                 <div className="profile-role">FullStack Web Developer | Project Manager</div>
               </div>
               <div className="profile-interact">
-                <button className="btn btn-download">Download CV</button>
+                <button className="btn btn-download" onClick={()=>{downLoadResume(PDF_FILE_URL)}}>Download CV</button>
                 <button className="btn btn-contact">Contact Me</button>
               </div>
             </div>
@@ -26,6 +43,7 @@ export function Home () {
           <p>{aboutMe}</p>
         </div>
       </div>
+     <AntModal/>
 
       <section className="content-section container">
         <h2 className="section-header">Featured Projects</h2>
