@@ -4,7 +4,7 @@ import persona from '../assets/Persona/persona.svg'
 import me from '../assets/Profile-Jade.jpg'
 import {AntModal} from '../components/Ant'
 
-const PDF_FILE_URL = 'http://localhost:5173/myPage/Paver-resume.pdf'
+const PDF_FILE_URL = 'https://jadepaver.github.io/myPage/Paver-resume.pdf'
 
 
 export function Home () {
